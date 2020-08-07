@@ -1,0 +1,34 @@
+spring:
+  jpa:
+    show-sql: true
+  datasource:
+    url: jdbc:oracle:thin:@192.168.1.61:1521:saasdev
+    username: XPDEV
+    password: NEWDEV2019
+ #   url: jdbc:mysql://localhost:3306/fxdelivers
+#    username: root
+#    password: samrat@321
+  hibernate:
+    naming:
+      strategy:org.hibernate.cfg.ImprovedNamingStrategy
+
+
+server:
+  servlet:
+    context-path: /fsldelivers
+
+app:
+  security:
+    jwtSecret: Z7s6QMtM1EQlaPm12nHyYP2H4W5U7RtQ
+    jwtExpirationMS: 86400000
+
+springdoc:
+  swagger-ui:
+    path=/swagger-ui-custom.html
+
+fsldelivey:
+  smtp:
+    port: 587
+    host: smtp.office365.com
+    fromEmailId: newefs@newage-global.com
+    fromEmailPassword: Zob22296
