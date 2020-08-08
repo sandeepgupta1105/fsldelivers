@@ -9,4 +9,6 @@ public class ServiceErrorCode {
 	public static final String EMAIL_TRIGGER_FAILED = "FSLD_AUTH_005";
 	public static final String RESET_CODE_EXPIRED = "FSLD_AUTH_006";
 	public static final String RESET_CODE_NOT_VALID = "FSLD_AUTH_007";
+	public static final String MINIMUM_RATE_NOT_SET = "FSLD_SHIPRATE_001";
+	public static final String CUSTOM_DUTY_NOT_SET = "FSLD_SHIPRATE_002";
 }

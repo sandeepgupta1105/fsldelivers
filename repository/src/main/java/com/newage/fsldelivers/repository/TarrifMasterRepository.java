@@ -12,8 +12,8 @@ import java.util.List;
 public interface TarrifMasterRepository extends JpaRepository<TarrifMaster, Long> {
 
     @Query(" FROM TarrifMaster tm ")
-    List<TarrifMaster> findRatePerKgObj(@Param("wtInKg") double wtInKg);
+    List<TarrifMaster> findRatePerKgAll(@Param("wtInKg") double wtInKg);
 
     @Query("SELECT tm.ratePerKg FROM TarrifMaster tm WHERE tm.fromWt <= :wtInKg AND tm.toWt >= :wtInKg ")
-    double findRatePerKg(@Param("wtInKg") double wtInKg);
+    Double findRatePerKg(@Param("wtInKg") double wtInKg);
 }

@@ -9,4 +9,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface CustomdutyMasterRepository extends JpaRepository<CountryMaster, Long> {
 
+    @Query("SELECT cdm.rateOfInterest FROM CustomdutyMaster cdm WHERE cdm.fromCost <= :totalCost AND cdm.toCost >= :totalCost ")
+    Double findCustomDutyRate(@Param("totalCost") double totalCost);
 }

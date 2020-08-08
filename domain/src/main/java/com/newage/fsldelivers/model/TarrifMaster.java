@@ -17,13 +17,13 @@ public class TarrifMaster {
 	@Column(name="ID")
 	private Long id;
 
-	@Column(name="FROM_WEIGHT", precision = 15, scale = 0, columnDefinition = "NUMBER (10)")
-	private double fromWt;
+	@Column(name="FROM_WEIGHT", precision = 15, scale = 10, columnDefinition = "NUMBER (15)")
+	private Double fromWt;
 
-	@Column(name="TO_WEIGHT", precision = 15, scale = 0, columnDefinition = "NUMBER (10)")
-	private double toWt;
+	@Column(name="TO_WEIGHT", precision = 15, scale =10, columnDefinition = "NUMBER (15)")
+	private Double toWt;
 
-	@Column(name="RATE_PER_KG", precision = 15, scale = 0, columnDefinition = "NUMBER (10)")
-	private double ratePerKg;
+	@Column(name="RATE_PER_KG", precision = 15, scale = 10, columnDefinition = "NUMBER (15)")
+	private Double ratePerKg;
 
 }

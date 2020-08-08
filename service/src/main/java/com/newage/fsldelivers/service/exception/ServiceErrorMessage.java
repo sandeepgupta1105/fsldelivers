@@ -9,5 +9,7 @@ public class ServiceErrorMessage {
 	public static final String EMAIL_TRIGGER_FAILED = "Email Trigger password failed for reset password";
 	public static final String RESET_CODE_EXPIRED = "Reset code has been expired";
 	public static final String RESET_CODE_NOT_VALID = "Reset code does not match";
+	public static final String MINIMUM_RATE_NOT_SET = "Minimum rate not configured";
+	public static final String CUSTOM_DUTY_NOT_SET = "Custom duty rate not configured";
 
 }

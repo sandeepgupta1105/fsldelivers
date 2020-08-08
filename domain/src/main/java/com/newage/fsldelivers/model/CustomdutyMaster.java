@@ -9,21 +9,21 @@ import javax.persistence.*;
 @Getter
 @Setter
 @Entity
-@Table(name="fsl_custom_tax_rate")
-public class CustomdutyMaster extends Auditable<String>  {
+@Table(name="FSL_CUSTOM_TAX_RATE")
+public class CustomdutyMaster {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
-	@Column(name="id")
+	@Column(name="ID")
 	private long id;
 
-	@Column(name="from_cost")
-	private double fromCost;
+	@Column(name="FROM_COST", precision = 15, scale = 10, columnDefinition = "NUMBER (15)")
+	private Double fromCost;
 
-	@Column(name="to_cost")
-	private double toCost;
+	@Column(name="TO_COST", precision = 15, scale = 10, columnDefinition = "NUMBER (15)")
+	private Double toCost;
 
-	@Column(name="rate_of_interest")
-	private double rateOfInterest;
+	@Column(name="RATE_OF_INTEREST", precision = 15, scale = 10, columnDefinition = "NUMBER (15)")
+	private Double rateOfInterest;
 
 }
